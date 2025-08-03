@@ -40,33 +40,35 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-  title: "Shreeya Pandey — Full Stack Developer",
-  fullName: "Shreeya Pandey",
-  email: "pshreeya522@gmail.com", // ← isey apne actual email se replace kar lena
-}
-,
+    title: "Shreeya Pandey — Full Stack Developer",
+    fullName: "Shreeya Pandey",
+    email: "pshreeya522@gmail.com",
+  },
+
   hero: {
     name: "Shreeya Pandey",
-p: [
-
-  "Crafting code that not only works, but speaks."
-]
+    p: ["Crafting code that not only works, but speaks."],
   },
+
   contact: {
-    p: "Get in touch  I",
+    p: "Get in touch",
     h2: "Contact. IT WORKS",
     form: {
       name: {
         span: "Your Name",
         placeholder: "What's your name?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: {
+        span: "Your Email",
+        placeholder: "What's your email?",
+      },
       message: {
         span: "Your Message",
         placeholder: "What do you want to say?",
       },
     },
   },
+
   sections: {
     about: {
       p: "Introduction",
@@ -75,26 +77,24 @@ p: [
 
 Driven by problem-solving and logical thinking, I enjoy breaking down complex challenges into simple, workable solutions through code. I actively seek to understand not just how things work, but why they work — constantly learning new frameworks, patterns, and technologies to stay ahead.
 
-My goal is to write code that’s not just functional, but efficient, maintainable, and impactful.`
-
-
+My goal is to write code that’s not just functional, but efficient, maintainable, and impactful.`,
     },
+
     experience: {
       p: "What I have done so far",
       h2: "Work Experience.",
     },
-    // feedbacks: {
-    //   p: "What others say",
-    //   h2: "Testimonials.",
-    // },
+
+    feedbacks: {
+      p: "What others say",
+      h2: "Testimonials.",
+      content: "Here’s what people say about my work.",
+    },
+
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.`,
     },
   },
 };

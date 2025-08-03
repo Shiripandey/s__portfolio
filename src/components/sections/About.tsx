@@ -2,12 +2,11 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
-import { services } from "../../constants";
 import { SectionWrapper } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
-import artist from "../../assets/3d-artist.png"; 
+import artist from "../../assets/3d-artist.png";
 
 interface IServiceCard {
   index: number;
@@ -47,7 +46,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-    <Header useMotion={true} {...config.sections.about} />
+      <Header useMotion={true} {...config.sections.about} />
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
@@ -69,9 +68,6 @@ const About = () => {
           />
         </div>
       </motion.div>
- 
-
-     
     </>
   );
 };
