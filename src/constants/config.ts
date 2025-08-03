@@ -40,17 +40,21 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
-  },
+  title: "Shreeya Pandey — Full Stack Developer",
+  fullName: "Shreeya Pandey",
+  email: "pshreeya522@gmail.com", // ← isey apne actual email se replace kar lena
+}
+,
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Shreeya Pandey",
+p: [
+
+  "Crafting code that not only works, but speaks."
+]
   },
   contact: {
-    p: "Get in touch",
-    h2: "Contact.",
+    p: "Get in touch  I",
+    h2: "Contact. IT WORKS",
     form: {
       name: {
         span: "Your Name",
@@ -67,20 +71,22 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `A solution-oriented full-stack developer with a deep passion for clean, structured, and purposeful code. Proficient in JavaScript, TypeScript, React, Node.js, and MongoDB, with experience in building real-time, responsive, and scalable web applications.
+
+Driven by problem-solving and logical thinking, I enjoy breaking down complex challenges into simple, workable solutions through code. I actively seek to understand not just how things work, but why they work — constantly learning new frameworks, patterns, and technologies to stay ahead.
+
+My goal is to write code that’s not just functional, but efficient, maintainable, and impactful.`
+
+
     },
     experience: {
       p: "What I have done so far",
       h2: "Work Experience.",
     },
-    feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
-    },
+    // feedbacks: {
+    //   p: "What others say",
+    //   h2: "Testimonials.",
+    // },
     works: {
       p: "My work",
       h2: "Projects.",

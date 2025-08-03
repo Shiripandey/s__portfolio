@@ -7,6 +7,7 @@ import { SectionWrapper } from "../../hoc";
 import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
+import artist from "../../assets/3d-artist.png"; 
 
 interface IServiceCard {
   index: number;
@@ -46,20 +47,31 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <Header useMotion={true} {...config.sections.about} />
+    <Header useMotion={true} {...config.sections.about} />
 
-      <motion.p
+      <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
+        className="mt-8 flex flex-col lg:flex-row items-start justify-between gap-10"
       >
-        {config.sections.about.content}
-      </motion.p>
+        {/* Left - Text Content */}
+        <div className="lg:w-2/3 w-full">
+          <p className="text-secondary text-[17px] leading-[30px]">
+            {config.sections.about.content}
+          </p>
+        </div>
 
-      <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+        {/* Right - Image */}
+        <div className="lg:w-1/3 w-full flex justify-center">
+          <img
+            src={artist}
+            alt="3D Artist"
+            className="w-full max-w-[300px] object-contain rounded-xl shadow-lg"
+          />
+        </div>
+      </motion.div>
+ 
+
+     
     </>
   );
 };
